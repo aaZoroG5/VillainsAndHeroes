@@ -54,6 +54,7 @@ public class ShowdownApp {
             spidey.fight(goblin);
             goblin.fight(spidey);
 
+            //display health
             System.out.println("Spider-Man's health: " + spidey.getHealth());
             System.out.println("Green Goblin's health: " + goblin.getHealth());
 
