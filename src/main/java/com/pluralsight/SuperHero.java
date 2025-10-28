@@ -4,11 +4,11 @@ import java.util.Random;
 
 public class SuperHero extends SuperPerson{
 
-    public SuperHero(String name, int health, int powerLevel){
+    public SuperHero(String name, int health, int willPower){
         //super is synonymous with parent
         super(name, health);
 
-        this.experiencePts = powerLevel;
+        this.experiencePts = willPower;
     }
 
     @Override
@@ -16,7 +16,7 @@ public class SuperHero extends SuperPerson{
         //generate a random number of damage
         Random random = new Random();
         //return a whole number from 0-100
-        int baseDamage = random.nextInt(101);
+        int baseDamage = random.nextInt(51);
 
         //
         int totalDamage = baseDamage + this.experiencePts;
