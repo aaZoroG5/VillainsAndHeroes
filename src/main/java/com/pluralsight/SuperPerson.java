@@ -1,7 +1,7 @@
 package com.pluralsight;
 
-public class SuperPerson {
-
+public abstract class SuperPerson {
+//made the SuperPerson class an abstract class
     //create the class properties
     protected String name;
     protected int health;
@@ -30,9 +30,9 @@ public class SuperPerson {
     }
 
     //this method allows one super person to fight another super person
-    public void fight (SuperPerson opponent){
-        System.out.println(this.getName() + " is ready to fight " + opponent.getName());
-    }
+    public abstract void fight (SuperPerson opponent);
+    //changed the fight method into an abstract method because it overidden in the child classes
+    //in order for the code to work, there needs to be a fight() method in the child classes
 
     public String getStatus(){
         return this.getName() + " has " + this.getHealth() + " health ";
@@ -61,4 +61,5 @@ public class SuperPerson {
     public void setExperiencePts(int experiencePts) {
         this.experiencePts = experiencePts;
     }
+
 }

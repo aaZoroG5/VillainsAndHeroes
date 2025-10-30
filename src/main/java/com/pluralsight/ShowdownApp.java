@@ -5,8 +5,8 @@ public class ShowdownApp {
     public static void main(String[] args) {
 
         //create 2 super people
-        SuperPerson mrFantastic = new SuperPerson("Mr.Fantastic", 100);
-        SuperPerson doom = new SuperPerson("Doom", 100);
+        SuperHero mrFantastic = new SuperHero("Mr.Fantastic", 100, 30);
+        SuperVillain doom = new SuperVillain("Doom", 100, 30);
 
         //print status of both supers
         System.out.println(mrFantastic.getStatus());
@@ -37,10 +37,7 @@ public class ShowdownApp {
         mrFantastic.fight(doom);
         doom.fight(mrFantastic);
 
-        SuperPerson myHero = new SuperPerson("Wolverine",100);
-        myHero.fight(doom);
-
-        System.out.println("-----------------------------------");
+        System.out.println("----------------------------------------------------");
         //print that a battle has started
         System.out.println("A FIGHT BETWEEN SPIDER-MAN AND GREEN GOBLIN HAS STARTED");
         //making a villain and hero battle
